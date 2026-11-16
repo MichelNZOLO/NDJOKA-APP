@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NDJOKA — Documentation</title>
+<meta name="description" content="NDJOKA : gérez votre bar, vos commandes et votre caisse depuis votre téléphone. Téléchargement, installation et guide de démarrage.">
+<style>
+:root{
+  --bg:#f7f8f5; --surface:#ffffff; --text:#1d2420; --muted:#5b6661;
+  --brand:#00B140; --brand-dark:#008a31; --accent:#FCD116; --line:#e2e6e1;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1412; --surface:#171e1b; --text:#e8efeb; --muted:#9aa8a1; --line:#26302c;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1412; --surface:#171e1b; --text:#e8efeb; --muted:#9aa8a1; --line:#26302c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:linear-gradient(135deg,var(--brand),var(--brand-dark));color:#fff;padding:56px 16px 64px;text-align:center}
+header h1{margin:0 0 8px;font-size:clamp(2rem,6vw,3rem);letter-spacing:.5px}
+header p{margin:0 auto;max-width:620px;opacity:.95}
+.btn{display:inline-block;margin:20px 6px 0;padding:14px 22px;border-radius:10px;background:#fff;color:var(--brand-dark);font-weight:700;text-decoration:none}
+.btn.alt{background:transparent;color:#fff;border:2px solid #fff}
+main{max-width:860px;margin:0 auto;padding:0 16px 48px}
+section{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;margin-top:20px}
+h2{margin:0 0 12px;font-size:1.4rem}
+h3{margin:18px 0 6px;font-size:1.05rem}
+ol,ul{padding-left:22px}
+li{margin:6px 0}
+.note{border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);padding:12px 14px;border-radius:8px;margin:14px 0}
+code{background:color-mix(in srgb,var(--brand) 12%,transparent);padding:2px 6px;border-radius:6px;font-size:.92em;word-break:break-all}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:.9rem}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px}
+.plan{border:1px solid var(--line);border-radius:12px;padding:18px}
+.plan h3{margin-top:0}
+.price{font-size:1.5rem;font-weight:800;color:var(--brand-dark)}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:24px 16px 40px}
+a{color:var(--brand-dark)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>NDJOKA</h1>
+  <p>Gérez votre bar, vos commandes et votre caisse depuis votre téléphone, en quelques secondes.</p>
+  <a class="btn" href="https://github.com/MichelNZOLO/NDJOKA-APP/releases/latest/download/ndjoka.apk">Télécharger l'application (Android)</a>
+  <a class="btn alt" href="#demarrage">Guide de démarrage</a>
+</header>
+
+<main>
+
+<section id="telechargement">
+  <h2>1. Télécharger l'application</h2>
+  <p>NDJOKA fonctionne sur Android. Ouvrez ce lien depuis le téléphone qui servira à la caisse :</p>
+  <p><a href="https://github.com/MichelNZOLO/NDJOKA-APP/releases/latest/download/ndjoka.apk"><strong>ndjoka.apk</strong> (dernière version)</a></p>
+  <div class="note">
+    <strong>Avertissement Android :</strong> le téléphone demandera d'autoriser l'installation depuis une source inconnue. C'est normal pour une application qui n'est pas passée par le Play Store. Autorisez-la une seule fois, dans les paramètres de votre navigateur.
+  </div>
+</section>
+
+<section id="installation">
+  <h2>2. Installer</h2>
+  <ol>
+    <li>Ouvrez le fichier <code>ndjoka.apk</code> téléchargé.</li>
+    <li>Si Android le demande, autorisez l'installation depuis ce navigateur.</li>
+    <li>Appuyez sur <strong>Installer</strong>, puis ouvrez NDJOKA.</li>
+    <li>Pour une mise à jour, réinstallez simplement le nouveau fichier par-dessus l'ancien : vos données sont conservées.</li>
+  </ol>
+</section>
+
+<section id="demarrage">
+  <h2>3. Démarrer</h2>
+  <h3>Créer votre bar</h3>
+  <p>Ouvrez l'application et inscrivez-vous en tant que gérant. Vous bénéficiez d'un <strong>essai gratuit de 14 jours</strong> avec toutes les fonctionnalités.</p>
+  <h3>Ajouter votre équipe</h3>
+  <p>Chaque membre du personnel se connecte avec un <strong>code du bar</strong> et son <strong>identifiant</strong> et <strong>code PIN à 6 chiffres</strong>. Le gérant crée ces accès depuis l'application.</p>
+  <h3>Prendre une commande</h3>
+  <p>Choisissez la table, ajoutez les produits, puis encaissez. Les commandes restent ouvertes tant que la table n'est pas réglée.</p>
+  <h3>Suivre la caisse et le stock</h3>
+  <p>Les rapports et l'inventaire se trouvent dans l'application, dans les onglets dédiés.</p>
+</section>
+
+<section id="formules">
+  <h2>4. Formules</h2>
+  <div class="plans">
+    <div class="plan">
+      <h3>Starter</h3>
+      <div class="price">2 000 XAF <small>/ mois</small></div>
+      <ul>
+        <li>Jusqu'à 3 membres d'équipe</li>
+        <li>5 tables ouvertes</li>
+      </ul>
+      <p class="muted">Paiement mobile money, division de l'addition et inventaire : disponibles avec la formule Team.</p>
+    </div>
+    <div class="plan">
+      <h3>Team</h3>
+      <div class="price">10 000 XAF <small>/ mois</small></div>
+      <ul>
+        <li>Membres d'équipe illimités</li>
+        <li>Tables illimitées</li>
+        <li>Mobile money, division de l'addition, inventaire</li>
+      </ul>
+    </div>
+  </div>
+  <p>Essai gratuit de 14 jours avec toutes les fonctionnalités de la formule Team.</p>
+</section>
+
+<section id="aide">
+  <h2>5. Besoin d'aide ?</h2>
+  <ul>
+    <li>Téléphone : <a href="tel:+24174361313">+241 74 36 13 13</a></li>
+    <li>E-mail : <a href="mailto:michimatogi@gmail.com">michimatogi@gmail.com</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  NDJOKA · Libreville, Gabon · <a href="https://github.com/MichelNZOLO/NDJOKA-APP/releases">Toutes les versions</a>
+</footer>
+
+</body>
+</html>
